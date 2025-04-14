@@ -141,5 +141,15 @@ body {
     .weather-icon {
       width: 100px;
     }
+
+    .search button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .search button img {
+        width: 24px; /* make the icon a bit bigger too */
+    }
+    
   }
   
