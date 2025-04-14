@@ -62,16 +62,17 @@ body {
 .weather-icon{
     width: 170px;
     margin-top: 30px;
+    max-width: 170px;
 }
 
 .weather h1{
-    font-size: 80px;
+    font-size: 10vw;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .weather h2{
-    font-size: 45px;
+    font-size: 6vw;
     font-weight: 400;
     margin-top: -10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -95,10 +96,13 @@ body {
 .col img{
     width: 40px;
     margin-right: 10px;
+    max-width: 40px;
 }
 
 .humidity, .wind{
-    font-size: 28px;
+    word-wrap: break-word;
+    max-width: 100px;
+    font-size: 5vw;
     margin-top: -6px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -115,3 +119,27 @@ body {
     display: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+@media (max-width: 480px) {
+    .card {
+      padding: 20px 15px;
+    }
+  
+    .weather h1 {
+      font-size: 50px;
+    }
+  
+    .weather h2 {
+      font-size: 30px;
+    }
+  
+    .humidity, .wind {
+      font-size: 20px;
+    }
+  
+    .weather-icon {
+      width: 100px;
+    }
+  }
+  
